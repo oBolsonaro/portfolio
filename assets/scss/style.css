@@ -789,39 +789,53 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 footer {
-  text-align: center;
-  margin-top: 72px;
+  text-align: center !important;
+  margin-top: 72px !important;
 }
+
 footer .grid-layout {
-  border-top: 1px solid rgba(114, 114, 126, 0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 100%;
-  padding: 8px;
+  border-top: 1px solid rgba(114, 114, 126, 0.2) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 18px !important;
 }
+
 @media screen and (max-width: 768px) {
   footer .grid-layout {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 footer .grid-layout #direitos-autorais {
-  margin-top: 24px;
+  margin-top: 24px !important;
 }
+
 footer .grid-layout p {
-  color: #b0b0b0;
-  text-align: center;
-  font-family: "Saira";
-  font-size: 1.8rem;
+  color: #fff !important;
+  text-align: center !important;
+  font-size: 15px !important;
 }
 
-.juca img {
-  width: 150px;
-  max-width: 150px;
+footer .grid-layout div {
+  margin-top: 24px !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
+footer .grid-layout div img {
+  width: 128px !important;
+  margin-left: 15px !important;
+}
+
+@media screen and (max-width: 768px) {
+  footer .grid-layout div {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
 .typewriter:after {
   content: "|";
   margin-left: 8px;

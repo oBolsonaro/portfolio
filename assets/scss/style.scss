@@ -1,5 +1,5 @@
 @import "./variables", "./reset", "./menu", "./home", "./about", 
-  "./projects", "./services", "./skills", "./footer";
+  "./projects", "./services", "./skills", "./footer", "./404";
 
 .typewriter:after {
   content: "|";
@@ -22,3 +22,7 @@
 .grid-layout {
   @include grid-layout();
 }
+
+
+
+

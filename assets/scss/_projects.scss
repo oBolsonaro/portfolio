@@ -1,23 +1,53 @@
 #s-projects {
   @include spacing-section;
   text-align: center;
-  background-color: $bg-main;
+  background-color: $bg-secondary;
   .grid-layout {
     h2 {
       @include title-section();
       span {
         color: $color-main;
-        font-size: $gap-6;
       }
     }
     #projects {
       margin: $gap-3 0px;
       @include flexbox-between;
-
       text-align: left;
+      .playanimes {
+        border: 1px solid #ffffff;
+        &:hover {
+          border: 1px solid #ffffff;
+        }
+      }
+     
+      .nwtelecom {
+        border: 1px solid #a5d051;
+        &:hover {
+          border: 1px solid #a5d051;
+        }
+      }
+
+      .speak {
+        border: 1px solid #00a3ff;
+        &:hover {
+          border: 1px solid #00a3ff;
+        }
+      }
+      .jucawiki {
+        border: 1px solid #f06548;
+        &:hover {
+          border: 1px solid #f06548;
+        }
+      }
+      .jucagames {
+        border: 1px solid #ff2c54;
+        &:hover {
+          border: 1px solid #ff2c54;
+        }
+      }
 
       > article {
-        background-color: $bg-secondary;
+        background-color: $bg-main;
 
         @include block-article;
         min-height: 275px;
@@ -34,12 +64,43 @@
           color: $color-gray;
           line-height: 3.2rem;
           font: {
-            family: $font-secondary;
             size: 1.8rem;
           }
         }
       }
     }
+    #playanimes {
+      color: #ffffff;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #17161d 100%);
+      }
+    }
+    #nwtelecom {
+      color: #a5d051;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #a5d051 100%);
+      }
+    }
+    #speak {
+      color: #00a3ff;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #00a3ff 100%);
+      }
+    }
+    // #f06548
+    #jucawiki {
+      color: #f06548;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #f06548 100%);
+      }
+    }
+    #jucagames {
+      color: #ff2c54;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #ff2c54 100%);
+      }
+    }
+
     
     a {
       color: $color-main;
